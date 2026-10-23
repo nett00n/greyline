@@ -31,7 +31,12 @@
           # fc-match (font resolution) is always needed; the compositor IPC tools
           # (swaymsg/swww/hyprctl/feh) come from the session PATH or the HM module.
           nativeBuildInputs = [ pkgs.makeWrapper ];
-          makeWrapperArgs = [ "--prefix PATH : ${pkgs.lib.makeBinPath [ pkgs.fontconfig ]}" ];
+          makeWrapperArgs = [
+            "--prefix"
+            "PATH"
+            ":"
+            (pkgs.lib.makeBinPath [ pkgs.fontconfig ])
+          ];
           # nodejs is a *test* input, not a runtime one: tests/test_js_port.py checks the
           # browser demo's ported maths against sun.py/geo.py by running both. Without it
           # those tests skip, silently, and the port can drift again.
