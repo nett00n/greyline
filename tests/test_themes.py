@@ -167,6 +167,7 @@ def test_light_themes_carry_a_light_label_plate():
         "tokyo-night-light",
         "catppuccin-latte",
         "solarized-light",
+        "qogir-light",
     ):
         th = themes.load_theme(name)
         assert "label_bg" in th, f"{name}: no label_bg"
