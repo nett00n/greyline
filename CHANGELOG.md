@@ -6,6 +6,13 @@ All notable changes to greyline are documented here. The format is based on
 
 ## [Unreleased]
 
+### Added
+- **The live demo shows the config that recreates what you see.** The controls now sit in
+  one collapsible side panel and cover most config options (home timezone and colour,
+  label size and plate, night darkness, an editable city list). A "Config for this view"
+  section prints the matching `config.toml`, with a Copy button; options a browser cannot
+  show are included as commented lines.
+
 ### Documentation
 - **The README now says how greyline is built.** A new "How this was built" section
   states that most of the code and prose is drafted with Claude Code, that those commits
