@@ -1,0 +1,31 @@
+# Qogir Dark — hand-written from the colours of the Qogir GTK theme by Vinceliuice
+# (https://github.com/vinceliuice/Qogir-theme, GPL-3.0): bg #32343d, base #282a33,
+# fg #e6ebef, accent #5294e2, success #6dcfa7, error #fc4138. Only the colour values are
+# used; no theme code or artwork is bundled.
+name = "Qogir Dark"
+
+# Map surfaces
+ocean = "#282a33"          # Qogir base
+land = "#3f424f"           # landmasses, a step above bg #32343d
+border = "#5b5f72"
+grid = "#ffffff30"         # timezone boundary lines
+grid_label = "#9a9fb2"
+gmt = "#6dcfa734"          # Qogir success green, UTC+0 column
+idl = "#fc4138"            # Qogir error red, International Date Line
+column = "#ffffff14"       # home timezone-column highlight
+
+# Day/night overlay
+night = "#101116"
+day_wash = "#e6ebef12"     # Qogir fg
+night_alpha = 12
+
+# Clocks
+text = "#e6ebef"           # Qogir fg
+text_stroke = "#0d0e12dc"
+dot = "#e6ebef"
+dot_outline = "#0d0e12d2"
+home = "#5294e2"           # Qogir accent blue
+home_stroke = "#0d0e12dc"
+
+# Optional extras
+logo = "#e6ebef"           # tint for logo_invert

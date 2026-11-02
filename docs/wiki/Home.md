@@ -18,7 +18,7 @@ actually have installed.
 ## Making it yours
 
 - **[Configuration](Configuration)** — every key, its values and its default.
-- **[Themes](Themes)** — the 35 bundled palettes, and how to write or convert one.
+- **[Themes](Themes)** — the 37 bundled palettes, and how to write or convert one.
 
 ## When it goes wrong
 

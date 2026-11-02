@@ -14,15 +14,15 @@ greyline help themes
 ```
 Themes — colour palettes, selected with `greyline config set theme <name>`.
 
-Built-in (35) — greyline's own `modus`/`blue`, and ports of the base16
+Built-in (37) — greyline's own `modus`/`blue`, and ports of the base16
 schemes at https://github.com/tinted-theming/schemes:
   blue, catppuccin-frappe, catppuccin-latte, catppuccin-macchiato, catppuccin-mocha,
   dracula, everforest-dark-hard, everforest-dark-medium, everforest-dark-soft,
   everforest-light-hard, everforest-light-medium, everforest-light-soft, github,
   github-dark, gruvbox-dark-hard, gruvbox-dark-medium, gruvbox-dark-soft,
   gruvbox-light-hard, gruvbox-light-medium, gruvbox-light-soft, kanagawa, modus,
-  monokai, nord, one-light, onedark, rose-pine, rose-pine-dawn, rose-pine-moon,
-  solarized-dark, solarized-light, tokyo-night-dark, tokyo-night-light,
+  monokai, nord, one-light, onedark, qogir-dark, qogir-light, rose-pine, rose-pine-dawn,
+  rose-pine-moon, solarized-dark, solarized-light, tokyo-night-dark, tokyo-night-light,
   tokyo-night-moon, tokyo-night-storm
 
 Older names, kept working forever:

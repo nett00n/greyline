@@ -1,0 +1,32 @@
+# Qogir Light — hand-written from the colours of the Qogir GTK theme by Vinceliuice
+# (https://github.com/vinceliuice/Qogir-theme, GPL-3.0): bg #fafbfc, base #ffffff,
+# fg #464853, accent #5294e2, success #6dcfa7, error #fc4138. Only the colour values are
+# used; no theme code or artwork is bundled.
+name = "Qogir Light"
+
+# Map surfaces
+ocean = "#fafbfc"          # Qogir bg
+land = "#c8ccd6"           # landmasses
+border = "#8f94a5"
+grid = "#00000024"         # timezone boundary lines
+grid_label = "#6a6d7c"
+gmt = "#2f9e763a"          # Qogir success green, deepened for a light map
+idl = "#e0352d"            # Qogir error red, deepened
+column = "#0000000f"       # home timezone-column highlight
+
+# Day/night overlay
+night = "#7d8190"
+day_wash = "#ffffff10"
+night_alpha = 44
+
+# Clocks
+text = "#2f313a"
+text_stroke = "#fffffedc"
+dot = "#464853"            # Qogir fg
+dot_outline = "#ffffffd2"
+home = "#2f6fc4"           # Qogir accent blue, deepened for contrast on light
+home_stroke = "#ffffffdc"
+
+# Optional extras
+logo = "#2f313a"           # tint for logo_invert
+label_bg = "#fafbfc"       # plate behind labels; dark text needs a light one
