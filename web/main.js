@@ -108,7 +108,7 @@ function configText() {
   if (state.nightAlpha !== null) out.push("", "[colors]", `night_alpha = ${state.nightAlpha}`);
   out.push("", "[twilight]", `bands = ${state.bands}`,
     '# darkness = "subtle"      # subtle | medium | dramatic (a theme\'s night_alpha wins)');
-  out.push("", "[home]", `tz = "${state.homeTz}"`);
+  out.push("", "[home]", ...homeTzLines(new Date()));
   if (state.homeColor) out.push(`color = "${state.homeColor}"`);
   if (!state.columnHighlight) out.push("column_highlight = false");
   for (const c of state.cities) {
@@ -119,8 +119,25 @@ function configText() {
   return out.join("\n") + "\n";
 }
 
+// greyline marks a city as home only when its tz is exactly home.tz (config.py), while
+// the demo highlights any city on the home zone's UTC offset. So name the city the demo
+// actually highlights, or the copied file would highlight nothing.
+function homeTzLines(now) {
+  const tz = state.homeTz;
+  if (state.cities.some((c) => c.tz === tz)) return [`tz = "${tz}"`];
+  const off = tzOffsetHours(tz, now);
+  const twin = state.cities.find((c) => Math.abs(tzOffsetHours(c.tz, now) - off) < 0.01);
+  if (twin) return [`tz = "${twin.tz}"`,
+    `# ${tz} has no city below; ${twin.name} is on the same offset, so it is home.`];
+  return [`tz = "${tz}"`,
+    `# No city below is in ${tz}, so greyline highlights nothing: add a [[city]] with this tz.`];
+}
+
+// render() runs every minute; only touch the (aria-live) text when it changes, or a
+// screen reader re-reads the whole file each tick.
 function showConfig() {
-  document.getElementById("config-text").textContent = configText();
+  const pre = document.getElementById("config-text"), text = configText();
+  if (pre.textContent !== text) pre.textContent = text;
 }
 
 function drawCityList() {
