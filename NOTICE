@@ -44,12 +44,15 @@ What is bundled (and its licensing)
   This is the default map (`map_style = "vector"`); it contains no IBM/Lenovo artwork.
 - **Default logo** — Tux, the Linux mascot, by Larry Ewing (created with GIMP).
   See `docs/CREDITS.md` for the attribution.
-- **Colour themes** — the palettes under `greyline/themes/` other than `modus` and
-  `blue` are derived from the base16 schemes of tinted-theming, **MIT-licensed**
+- **Colour themes** — the palettes under `greyline/themes/` other than `modus`,
+  `blue` and `qogir-*` are derived from the base16 schemes of tinted-theming, **MIT-licensed**
   (Copyright (c) 2022 Tinted Theming) — https://github.com/tinted-theming/schemes .
   Each theme file names the scheme and its author; `tools/base16_to_theme.py` does the
   conversion. The scheme authors' own trademarks and project names (Gruvbox,
   Catppuccin, Everforest, …) remain theirs.
+  `qogir-dark` and `qogir-light` are hand-written from the colour values of the Qogir GTK
+  theme (https://github.com/vinceliuice/Qogir-theme, GPL-3.0); no theme code or artwork
+  is bundled.
 
 What is NOT bundled
 -------------------

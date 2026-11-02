@@ -6,6 +6,10 @@ All notable changes to greyline are documented here. The format is based on
 
 ## [Unreleased]
 
+### Added
+- **Qogir palettes.** `qogir-dark` and `qogir-light`, taken from the colours of the Qogir
+  GTK theme (blue accent, green UTC+0 column, red date line). 37 bundled themes now.
+
 ### Documentation
 - **The README now says how greyline is built.** A new "How this was built" section
   states that most of the code and prose is drafted with Claude Code, that those commits
